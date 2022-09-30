@@ -1,0 +1,29 @@
+name: errcheck
+version: 1.6.2
+summary: Unchecked error checker for go programs
+description: |
+  errcheck is a program for checking for unchecked errors in go programs.
+
+base: core20
+confinement: strict
+grade: stable
+
+apps:
+  errcheck:
+    command: bin/errcheck
+    plugs:
+      - home
+      #- network
+
+parts:
+  errcheck:
+    plugin: go
+    source: https://github.com/kisielk/errcheck.git
+    source-tag: v$SNAPCRAFT_PROJECT_VERSION
+    build-packages:
+      - git
+      - gcc
+    build-snaps:
+      - go
+    stage-snaps:
+      - go
