@@ -3,6 +3,7 @@ version: 1.6.2
 summary: Unchecked error checker for go programs
 description: |
   errcheck is a program for checking for unchecked errors in go programs.
+license: MIT
 
 base: core20
 confinement: strict
