@@ -1,5 +1,5 @@
 name: errcheck
-version: 1.6.2
+version: 1.6.3
 summary: Unchecked error checker for go programs
 description: |
   errcheck is a program for checking for unchecked errors in go programs.
