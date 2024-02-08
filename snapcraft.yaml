@@ -5,7 +5,7 @@ description: |
   errcheck is a program for checking for unchecked errors in go programs.
 license: MIT
 
-base: core20
+base: core22
 confinement: strict
 grade: stable
 
@@ -25,6 +25,6 @@ parts:
       - git
       - gcc
     build-snaps:
-      - go
+      - go/latest/stable
     stage-snaps:
-      - go
+      - go/latest/stable
