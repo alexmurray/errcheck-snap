@@ -14,13 +14,13 @@ apps:
     command: bin/errcheck
     plugs:
       - home
-      #- network
+      - network
 
 parts:
   errcheck:
     plugin: go
     source: https://github.com/kisielk/errcheck.git
-    source-tag: v$SNAPCRAFT_PROJECT_VERSION
+    source-tag: v$CRAFT_PROJECT_VERSION
     build-packages:
       - git
       - gcc
